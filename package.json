@@ -1,0 +1,28 @@
+{
+  "name": "discord-webhook-sender",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file=.env . --",
+    "dev": "tsx src/index.ts",
+    "build:windows": "rmdir /s /q build && tsc && echo Successfully created a new Build.",
+    "build:linux": "rm -rf build && tsc && echo Successfully created a new Build.",
+    "dev:watch": "tsx --watch --env-file=.env src/index.ts",
+    "start:watch": "node --watch --env-file=.env ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^24.3.3",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.11.0",
+    "chalk": "^5.6.2",
+    "consola": "^3.4.2"
+  }
+}
