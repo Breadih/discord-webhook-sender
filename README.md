@@ -1,6 +1,6 @@
 # Discord Webhook Sender
 
-### 🛑 Currently on production
+### 🛑 Currently on development
 
 ## Overview
 
